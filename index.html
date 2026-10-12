@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon in the Labyrinth</title>
+    <style>
+        /* Clean, Readable Retro Monospace Typography */
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+        :root {
+            --bg-color: #050508;          /* Deep obsidian background */
+            --card-bg: #0e0e14;          /* Soft dark container background */
+            --text-color: #e6e6e6;        /* Clean off-white text for easy reading */
+            --heading-color: #ffffff;     /* Pure white headings */
+            --accent-color: #99ccff;      /* Soft blue accent for links */
+            --hover-color: #ffffff;       /* Pure white hover highlight */
+            --border-color: #222233;      /* Subtle dark border frame */
+            --muted-text: #9090a0;       /* Muted gray text for captions */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Space Mono', 'Courier Prime', 'Courier New', monospace;
+            font-size: 1.05rem;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Breadcrumb Navigation Line */
+        nav.breadcrumbs {
+            font-size: 0.95rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.6rem 1rem;
+            margin-bottom: 2rem;
+            color: var(--muted-text);
+        }
+
+        nav.breadcrumbs a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        nav.breadcrumbs a:hover {
+            color: var(--hover-color);
+        }
+
+        /* Header & Hero Banner */
+        header.page-header {
+            text-align: center;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-banner {
+            width: 100%;
+            max-height: 420px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.25rem;
+        }
+
+        header.page-header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Text Content Box */
+        .text-content {
+            background: #000000;
+            border: 1px solid var(--border-color);
+            padding: 1.25rem;
+            font-size: 1rem;
+            color: var(--text-color);
+            text-align: left;
+            white-space: pre-wrap;
+            margin-top: 1rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        /* Subfolder Navigation Grid */
+        .folder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .folder-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.8rem 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .folder-card:hover {
+            border-color: var(--accent-color);
+            color: var(--hover-color);
+        }
+
+        /* Photos Section (Inline Embedded Files) */
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .image-embed-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.8rem;
+        }
+
+        .image-embed-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid var(--border-color);
+        }
+
+        .image-embed-card .caption {
+            margin-top: 0.6rem;
+            font-size: 0.9rem;
+            color: var(--muted-text);
+            text-align: center;
+        }
+
+        /* Video & Audio Sections */
+        .video-list, .audio-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .video-card, .audio-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+        }
+
+        .video-card video, .audio-card audio {
+            width: 100%;
+        }
+
+        .video-card p, .audio-card span {
+            margin-top: 0.5rem;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="breadcrumbs"><a href="./index.html">Falcon in the Labyrinth</a></nav>
+
+    <header class="page-header">
+        <img src="./hero.jpg" alt="Falcon in the Labyrinth" class="hero-banner">
+        <h1>Falcon in the Labyrinth</h1>
+        <div class="text-content">C. B. &quot;Scott&quot; Jones (1928–2023) was a retired U.S. Navy Commander, intelligence officer, and prominent figure in ufology and parapsychology.  Born in Emporia, Kansas, he served for 30 years, including combat tours as a jet fighter pilot in the Korean War (included an encounter with a saucer ufo that slowed time down during a dogfight) and 15 years in Naval Intelligence, where he briefed the President’s Scientific Advisory Committee. 
+
+After retiring from the Navy in the mid-1970s, Jones transitioned into research on anomalous phenomena. He served as Special Assistant to Senator Claiborne Pell (1985–1991), tasked with investigating consciousness research in the USSR and China.  During this period, he co-founded the Human Potential Foundation (1989) with Pell, which conducted research on interspecies communication and survival.  He also founded the Center for Applied Anomalous Phenomena (1985) and later the Peace and Emergency Action Coalition for Earth (PEACE) and later Peaceroom and peaceroom.com.   
+
+Jones held leadership roles in several organizations, including President of the American Society for Psychical Research and Special Consultant for MUFON.  He maintained extensive connections with figures such as Carol Rosin, Rima Laibow, and Prince Hans-Adam of Liechtenstein, and his papers are archived at the University of Colorado Boulder.  He passed away on January 16, 2023.
+
+Scott was also an experiencer that loved telling stories of his encounters with the phenomenon during military exercises and otherwise.  He also loved being a part of the community of believers, top thinkers and researchers in the field while it lasted.  
+
+This site is dedicated to the release of some of Scott&#x27;s unpublished personal files and recordings that could serve as minor puzzle pieces for UFO disclosure history researchers.  The main focus being on his involvement with the Aviary and how bird names were used as tools of pride and confusion, the personnel of the Human Potential Foundation and their encounters with unknown or secret forces, documentation of the famous UFO roundtable meeting at Laurance Rockefeller&#x27;s JY Ranch in 1993, and Scott&#x27;s interactions with a famous disruptor of John Mack&#x27;s research group.</div>
+    </header>
+
+    <section>
+  <div class="folder-grid">
+<a class="folder-card" href="./C.%20Richard%20%28Dick%29%20Farley/index.html">📁 <span>C. Richard (Dick) Farley</span></a>
+<a class="folder-card" href="./Correspondences/index.html">📁 <span>Correspondences</span></a>
+<a class="folder-card" href="./Donna%20Rice%20Bassett/index.html">📁 <span>Donna Rice Bassett</span></a>
+<a class="folder-card" href="./JY%20Ranch%20Meeting%201993/index.html">📁 <span>JY Ranch Meeting 1993</span></a>
+<a class="folder-card" href="./Orbs%20in%20the%20Office/index.html">📁 <span>Orbs in the Office</span></a>
+<a class="folder-card" href="./Spirit%20Releasement%20Session/index.html">📁 <span>Spirit Releasement Session</span></a>
+<a class="folder-card" href="./The%20Aviary/index.html">📁 <span>The Aviary</span></a>
+  </div>
+</section>
+    <section>
+  <div class="image-gallery">
+<div class="image-embed-card">
+  <img src="./Scott%20Uniform%20seated.jpg" alt="Scott Uniform seated" loading="lazy">
+  <div class="caption">Scott Uniform seated.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Scott%20Uniform%20w%20Car.jpg" alt="Scott Uniform w Car" loading="lazy">
+  <div class="caption">Scott Uniform w Car.jpg</div>
+</div>
+  </div>
+</section>
+    
+    
+</body>
+</html>

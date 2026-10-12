@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviary PowerPoint presentation</title>
+    <style>
+        /* Clean, Readable Retro Monospace Typography */
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+        :root {
+            --bg-color: #050508;          /* Deep obsidian background */
+            --card-bg: #0e0e14;          /* Soft dark container background */
+            --text-color: #e6e6e6;        /* Clean off-white text for easy reading */
+            --heading-color: #ffffff;     /* Pure white headings */
+            --accent-color: #99ccff;      /* Soft blue accent for links */
+            --hover-color: #ffffff;       /* Pure white hover highlight */
+            --border-color: #222233;      /* Subtle dark border frame */
+            --muted-text: #9090a0;       /* Muted gray text for captions */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Space Mono', 'Courier Prime', 'Courier New', monospace;
+            font-size: 1.05rem;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Breadcrumb Navigation Line */
+        nav.breadcrumbs {
+            font-size: 0.95rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.6rem 1rem;
+            margin-bottom: 2rem;
+            color: var(--muted-text);
+        }
+
+        nav.breadcrumbs a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        nav.breadcrumbs a:hover {
+            color: var(--hover-color);
+        }
+
+        /* Header & Hero Banner */
+        header.page-header {
+            text-align: center;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-banner {
+            width: 100%;
+            max-height: 420px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.25rem;
+        }
+
+        header.page-header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Text Content Box */
+        .text-content {
+            background: #000000;
+            border: 1px solid var(--border-color);
+            padding: 1.25rem;
+            font-size: 1rem;
+            color: var(--text-color);
+            text-align: left;
+            white-space: pre-wrap;
+            margin-top: 1rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        /* Subfolder Navigation Grid */
+        .folder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .folder-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.8rem 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .folder-card:hover {
+            border-color: var(--accent-color);
+            color: var(--hover-color);
+        }
+
+        /* Photos Section (Inline Embedded Files) */
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .image-embed-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.8rem;
+        }
+
+        .image-embed-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid var(--border-color);
+        }
+
+        .image-embed-card .caption {
+            margin-top: 0.6rem;
+            font-size: 0.9rem;
+            color: var(--muted-text);
+            text-align: center;
+        }
+
+        /* Video & Audio Sections */
+        .video-list, .audio-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .video-card, .audio-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+        }
+
+        .video-card video, .audio-card audio {
+            width: 100%;
+        }
+
+        .video-card p, .audio-card span {
+            margin-top: 0.5rem;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="breadcrumbs"><a href="../../index.html">Falcon in the Labyrinth</a> / <a href="../index.html">The Aviary</a> / <span>Aviary PowerPoint presentation</span></nav>
+
+    <header class="page-header">
+        
+        <h1>Aviary PowerPoint presentation</h1>
+        
+    </header>
+
+    
+    <section>
+  <div class="image-gallery">
+<div class="image-embed-card">
+  <img src="./Aviary-1.jpg" alt="Aviary-1" loading="lazy">
+  <div class="caption">Aviary-1.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-10.jpg" alt="Aviary-10" loading="lazy">
+  <div class="caption">Aviary-10.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-11.jpg" alt="Aviary-11" loading="lazy">
+  <div class="caption">Aviary-11.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-12.jpg" alt="Aviary-12" loading="lazy">
+  <div class="caption">Aviary-12.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-13.jpg" alt="Aviary-13" loading="lazy">
+  <div class="caption">Aviary-13.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-14.jpg" alt="Aviary-14" loading="lazy">
+  <div class="caption">Aviary-14.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-15.jpg" alt="Aviary-15" loading="lazy">
+  <div class="caption">Aviary-15.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-16.jpg" alt="Aviary-16" loading="lazy">
+  <div class="caption">Aviary-16.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-17.jpg" alt="Aviary-17" loading="lazy">
+  <div class="caption">Aviary-17.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-18.jpg" alt="Aviary-18" loading="lazy">
+  <div class="caption">Aviary-18.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-19.jpg" alt="Aviary-19" loading="lazy">
+  <div class="caption">Aviary-19.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-2.jpg" alt="Aviary-2" loading="lazy">
+  <div class="caption">Aviary-2.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-20.jpg" alt="Aviary-20" loading="lazy">
+  <div class="caption">Aviary-20.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-21.jpg" alt="Aviary-21" loading="lazy">
+  <div class="caption">Aviary-21.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-22.jpg" alt="Aviary-22" loading="lazy">
+  <div class="caption">Aviary-22.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-23.jpg" alt="Aviary-23" loading="lazy">
+  <div class="caption">Aviary-23.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-24.jpg" alt="Aviary-24" loading="lazy">
+  <div class="caption">Aviary-24.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-25.jpg" alt="Aviary-25" loading="lazy">
+  <div class="caption">Aviary-25.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-26.jpg" alt="Aviary-26" loading="lazy">
+  <div class="caption">Aviary-26.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-27.jpg" alt="Aviary-27" loading="lazy">
+  <div class="caption">Aviary-27.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-28.jpg" alt="Aviary-28" loading="lazy">
+  <div class="caption">Aviary-28.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-29.jpg" alt="Aviary-29" loading="lazy">
+  <div class="caption">Aviary-29.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-3.jpg" alt="Aviary-3" loading="lazy">
+  <div class="caption">Aviary-3.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-30.jpg" alt="Aviary-30" loading="lazy">
+  <div class="caption">Aviary-30.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-31.jpg" alt="Aviary-31" loading="lazy">
+  <div class="caption">Aviary-31.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-32.jpg" alt="Aviary-32" loading="lazy">
+  <div class="caption">Aviary-32.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-33.jpg" alt="Aviary-33" loading="lazy">
+  <div class="caption">Aviary-33.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-34.jpg" alt="Aviary-34" loading="lazy">
+  <div class="caption">Aviary-34.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-35.jpg" alt="Aviary-35" loading="lazy">
+  <div class="caption">Aviary-35.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-36.jpg" alt="Aviary-36" loading="lazy">
+  <div class="caption">Aviary-36.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-37.jpg" alt="Aviary-37" loading="lazy">
+  <div class="caption">Aviary-37.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-38.jpg" alt="Aviary-38" loading="lazy">
+  <div class="caption">Aviary-38.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-39.jpg" alt="Aviary-39" loading="lazy">
+  <div class="caption">Aviary-39.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-4.jpg" alt="Aviary-4" loading="lazy">
+  <div class="caption">Aviary-4.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-40.jpg" alt="Aviary-40" loading="lazy">
+  <div class="caption">Aviary-40.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-41.jpg" alt="Aviary-41" loading="lazy">
+  <div class="caption">Aviary-41.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-42.jpg" alt="Aviary-42" loading="lazy">
+  <div class="caption">Aviary-42.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-43.jpg" alt="Aviary-43" loading="lazy">
+  <div class="caption">Aviary-43.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-44.jpg" alt="Aviary-44" loading="lazy">
+  <div class="caption">Aviary-44.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-5.jpg" alt="Aviary-5" loading="lazy">
+  <div class="caption">Aviary-5.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-6.jpg" alt="Aviary-6" loading="lazy">
+  <div class="caption">Aviary-6.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-7.jpg" alt="Aviary-7" loading="lazy">
+  <div class="caption">Aviary-7.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-8.jpg" alt="Aviary-8" loading="lazy">
+  <div class="caption">Aviary-8.jpg</div>
+</div>
+<div class="image-embed-card">
+  <img src="./Aviary-9.jpg" alt="Aviary-9" loading="lazy">
+  <div class="caption">Aviary-9.jpg</div>
+</div>
+  </div>
+</section>
+    
+    
+</body>
+</html>
